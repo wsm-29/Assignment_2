@@ -1,0 +1,51 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{\label{tab:assignment2} The Effect of Anti-vaping Law on Lung Hospitalizations}
+\begin{tabular*}{\hsize}{@{\hskip\tabcolsep\extracolsep\fill}l*{2}{c}}
+\hline\hline
+                    &\multicolumn{2}{c}{Poission:Lung Hospitalizations}\\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         \\
+\hline
+Anti-Vaping Law x   &                     &     -0.0364\sym{***}\\
+Post                &                     &  (0.000565)         \\
+[1em]
+Anti-Vaping Law       &     0.00161         &                     \\
+$\times$ Year=2011  &   (0.00187)         &                     \\
+[1em]
+Anti-Vaping Law       &    0.000474         &                     \\
+$\times$ Year=2012  &   (0.00186)         &                     \\
+[1em]
+Anti-Vaping Law       &   -0.000880         &                     \\
+$\times$ Year=2013  &   (0.00181)         &                     \\
+[1em]
+Anti-Vaping Law       &    0.000606         &                     \\
+$\times$ Year=2014  &   (0.00182)         &                     \\
+[1em]
+Anti-Vaping Law       &    0.000970         &                     \\
+$\times$ Year=2015  &   (0.00170)         &                     \\
+[1em]
+Anti-Vaping Law       &     0.00166         &                     \\
+$\times$ Year=2016  &   (0.00181)         &                     \\
+[1em]
+Anti-Vaping Law       &  -0.0000699         &                     \\
+$\times$ Year=2017  &   (0.00189)         &                     \\
+[1em]
+Anti-Vaping Law       &     0.00382\sym{*}  &                     \\
+$\times$ Year=2018  &   (0.00188)         &                     \\
+[1em]
+Anti-Vaping Law       &   -0.000839         &                     \\
+$\times$ Year=2019  &   (0.00173)         &                     \\
+[1em]
+Anti-Vaping Law       &    0.000816         &                     \\
+$\times$ Year=2020  &   (0.00174)         &                     \\
+\hline
+Observations        &         550         &        1050         \\
+Fixed Effects:      &                     &                     \\
+Year                &         Yes         &         Yes         \\
+State               &         Yes         &         Yes         \\
+\hline\hline
+
+\end{tabular*}
+{\parbox{4.8in}{\footnotesize Notes: This table presents Poisson regression models estimating the causal effect of anti-vaping laws on the number of lung-related hospitalizations, controlling for state and year fixed effects. Model 1 examines year-by-year differences in lung hospitalizations between treated states and control states during the pre-treatment period (before 2021) to assess parallel trends requirement. Year 2010 is the reference year. Model 2 estimates the impact of anti-vaping laws by including an interaction term between a post-2021 dummy variable (indicating years after 2020) and a treatment indicator for states that implemented anti-vaping laws in 2021. The coefficient in Model 2 indicates that on average, states with an anti-vaping law experienced a 3.6\% decline in the number of lung-related hospitalizations following the law's implementation.\\Standard errors are in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)
+}}
+\end{table}
